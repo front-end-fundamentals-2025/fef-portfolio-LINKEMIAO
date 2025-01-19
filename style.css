@@ -3,10 +3,34 @@
     margin: 0;
 
 }
-header, section, footer {
-    background-color: rgb(237, 208, 169);
-    border-color: brown;
-
-    padding: 30px 50px;
-    margin: 30px;
+header {
+    background-color: rgb(76, 60, 40);
+    height: 80px;
+    width: 100%;
 }
+h1 {
+    position: absolute;
+    left: 10px;
+    top:0;
+    line-height: 80px;
+    color: white;
+}
+header ul {
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    line-height: 100px;
+
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+text-decoration:underline;
+}
+rgb(237, 208, 169);
