@@ -4,9 +4,40 @@
     box-sizing: border-box;
 }
 
-body{
+header {
+    background-color: rgb(76, 60, 40);
+    height: 80px;
     width: 100%;
-    height: 100vh;
+}
+h1 {
+    position: absolute;
+    left: 10px;
+    top:0;
+    line-height: 80px;
+    color: white;
+}
+header ul {
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    line-height: 100px;
+
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+text-decoration:underline;
+}
+
+body{
+    height: 80px;
+    width: 100%;
 }
 
 .container{
@@ -26,5 +57,14 @@ body{
     top:0;
     width: 100%;
     height:100%;
-    background: url('../9f7f38d201787e46d28e8a2cc0e8589a.jpg')
+    background-image:url('../9f7f38d201787e46d28e8a2cc0e8589a.jpg' )no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.content-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
