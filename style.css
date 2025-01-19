@@ -49,5 +49,11 @@ text-decoration:underline;
 }
 
 .part1 h2 {
-    font-size: larger;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.part1 a {
+    color: white;
+    padding-top: 200px;
 }
