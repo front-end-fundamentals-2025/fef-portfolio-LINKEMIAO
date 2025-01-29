@@ -68,10 +68,21 @@ text-decoration:underline;
     padding: 50px 50px 20px;
 }
 
+.works a {
+    text-decoration: none;
+}
+
 .works div {
     width: 270px;
     text-align: center;
+    transition: transform 0.3 ease-in-out;
 }
+
+
+.works div:hover {
+    transform: scale(1.05); /* 鼠标悬停时微微放大 */
+}
+
 
 .works img {
     width: 100%;
