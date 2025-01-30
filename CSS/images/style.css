@@ -39,6 +39,7 @@ text-decoration:underline;
     color: white;
     height: 100vh;
     background-image:url("../images/微信图片_20250126134845.jpg");
+    /* filter: brightness(50%);cover the header */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -100,6 +101,30 @@ text-decoration:underline;
     font-size: 14px;
     color: white;
     line-height: 1.6em;
+}
+
+.oceanpage {
+    display: flex;
+    background-color: rgb(32, 31, 31);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 20px;
+}
+
+.oceanpage h2 {
+    font-size: 50px;
+    margin: 50px;
+}
+
+.oceanpage a {
+    color: white;
+    padding-top: 200px;
+}
+
+.oceanpage div {
+    width: 80px;
+    text-align: center;
+    transition: transform 0.3 ease-in-out;
 }
 
 
