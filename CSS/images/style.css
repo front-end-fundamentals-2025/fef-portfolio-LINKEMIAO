@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 header {
-    background-color: rgb(49, 39, 44);
     height: 80px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
+    background-color: rgb(34, 32, 32);
 }
 h1 {
     position: absolute;
@@ -99,21 +100,33 @@ text-decoration:underline;
 
 .works p {
     font-size: 14px;
-    color: white;
+    color: white; 
     line-height: 1.6em;
 }
 
 .oceanpage {
     display: flex;
+    flex-direction: column;
     background-color: rgb(32, 31, 31);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 50px 50px 20px;
+    background-image: url("../images/微信图片_20250131143035.jpg");
+    background-size: cover;
+    height: 100vh;
 }
 
 .oceanpage h2 {
+    color: white;
     font-size: 50px;
-    margin: 50px;
+    margin-bottom:100px;
+}
+
+.oceanpage h4 {
+    color: white;
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 10%;
+    text-align:justify;
 }
 
 .oceanpage a {
@@ -127,17 +140,226 @@ text-decoration:underline;
     transition: transform 0.3 ease-in-out;
 }
 
+.snowfield {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 31, 31);
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../images/微信图片_20250131144237.jpg");
+    background-size: cover;
+    height: 100vh;
+}
 
+.snowfield h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom:100px;
+}
+
+.snowfield h4 {
+    color: white;
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 10%;
+    text-align:justify;
+}
+
+.snowfield a {
+    color: white;
+    padding-top: 200px;
+}
+
+.snowfield div {
+    width: 80px;
+    text-align: center;
+    transition: transform 0.3 ease-in-out;
+}
+
+.desert {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 31, 31);
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../images/微信图片_20250131145254.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.desert h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom:100px;
+}
+
+.desert h4 {
+    color: white;
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 10%;
+    text-align:justify;
+}
+
+.desert a {
+    color: white;
+    padding-top: 200px;
+}
+
+.desert div {
+    width: 80px;
+    text-align: center;
+    transition: transform 0.3 ease-in-out;
+}
+
+
+.forest {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 31, 31);
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../images/微信图片_20250131153734.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.forest h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom:100px;
+}
+
+.forest h4 {
+    color: white;
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 10%;
+    text-align:justify;
+}
+
+.forest a {
+    color: white;
+    padding-top: 200px;
+}
+
+.forest div {
+    width: 80px;
+    text-align: center;
+    transition: transform 0.3 ease-in-out;
+}
+
+.africansavannah {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 31, 31);
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../images/微信图片_20250131154957.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.africansavannah h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom:100px;
+}
+
+.africansavannah h4 {
+    color: white;
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 10%;
+    text-align:justify;
+}
+
+.africansavannah a {
+    color: white;
+    padding-top: 200px;
+}
+
+.africansavannah div {
+    width: 80px;
+    text-align: center;
+    transition: transform 0.3 ease-in-out;
+}
+
+
+/* reference:chatgpt:https://chatgpt.com/share/679ceabc-3f14-8000-b733-94375449cfa7 */
+.works {
+    display: flex;
+    background-color: rgb(32, 31, 31);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 20px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.works a {
+    text-decoration: none;
+}
+
+.works div {
+    width: 270px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Add some spacing between rows */
+}
+
+.works div:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.works img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.works h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+}
+
+.works p {
+    font-size: 14px;
+    color: white; 
+    line-height: 1.6em;
+}
+
+/* Responsive Design */
+
+/* For screen widths smaller than 1200px, show two items per row */
+@media (max-width: 1200px) {
+    .works div {
+        width: 45%;
+    }
+}
+
+/* For screen widths smaller than 768px, arrange items in a single column */
 @media (max-width: 768px) {
-    .contact-box {
-        flex-direction: column;
+    .works div {
+        width: 100%; /* Items take full width */
     }
-
-    .left {
-        display: none;
+    .works {
+        padding: 20px; /* Less padding for smaller screens */
     }
+    .works h3 {
+        font-size: 18px; /* Smaller font size for titles */
+    }
+    .works p {
+        font-size: 12px; /* Smaller font size for descriptions */
+    }
+}
 
-    .right {
-        padding: 15px;
+/* For screen widths smaller than 480px, adjust font size further */
+@media (max-width: 480px) {
+    .works h3 {
+        font-size: 16px; /* Smaller title font */
+    }
+    .works p {
+        font-size: 12px; /* Smaller description font */
     }
 }
