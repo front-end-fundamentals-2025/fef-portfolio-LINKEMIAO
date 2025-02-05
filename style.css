@@ -39,7 +39,7 @@ text-decoration:underline;
 
     color: white;
     height: 100vh;
-    background-image:url("../images/微信图片_20250126134845.jpg");
+    background-image:url("images/微信图片_20250126134845.jpg");
     /* filter: brightness(50%);cover the header */
     background-repeat: no-repeat;
     background-size: cover;
