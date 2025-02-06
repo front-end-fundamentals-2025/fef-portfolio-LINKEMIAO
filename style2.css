@@ -75,6 +75,7 @@ h2 {
 }
 
 
+
 @media (max-width: 768px) {
     .contact-box {
         flex-direction: column;
