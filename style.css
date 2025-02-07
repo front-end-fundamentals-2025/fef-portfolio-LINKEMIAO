@@ -279,7 +279,7 @@ text-decoration:underline;
 }
 .heart:hover {
     background-color: rgb(222, 51, 116); 
-    animation: shake 1.5s ease-in-out; /
+    animation: shake 1.5s ease-in-out infinite; 
 }
 @keyframes shake {
     25% {
@@ -374,6 +374,18 @@ text-decoration:underline;
 @media (max-width: 768px) {
     .works a {
         flex: 1 1 calc(50% - 30px); 
+    }
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .left {
+        display: none;
+    }
+    
+
+    .right {
+        padding: 15px;
     }
 }
 
