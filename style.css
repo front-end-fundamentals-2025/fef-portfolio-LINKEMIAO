@@ -314,6 +314,15 @@ text-decoration:underline;
         transform: scale(1);
     }
 }
+
+.stone{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
 /* reference:DeepSeek:https://chat.deepseek.com/a/chat/s/254c70d3-1db0-40ba-bc79-aecddfc8d04f */
 .works {
     display: flex;
