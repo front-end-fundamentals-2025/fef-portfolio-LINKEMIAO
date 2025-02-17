@@ -49,7 +49,7 @@ text-decoration:underline;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .part1 h2 {
@@ -255,7 +255,7 @@ text-decoration:underline;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 }
-
+/* reference: Bilibili https://www.bilibili.com/video/BV1vi4y147hf/?share_source=copy_web&vd_source=1a8cc37f6bd5dc76524f239958efaccc*/
 .heart::before {
     content: '';
     width: 40px;
@@ -354,9 +354,48 @@ text-decoration:underline;
     align-items: center; 
 }
 
+/*here*/
+
 .works div:hover {
     transform: scale(1.05); 
+    animation: shake2 0.5s ease-in-out infinite; 
 }
+
+@keyframes shake2 {
+    25% {
+        transform: scale(1.05);
+    }
+
+    40% {
+        transform: rotate(-1deg) scale(1.05);
+    }
+
+    50% {
+        transform: rotate(1deg) scale(1.05);
+    }
+
+    60% {
+        transform: rotate(-1deg) scale(1.05);
+    }
+
+    70% {
+        transform: rotate(1deg) scale(1.05);
+    }
+
+    80% {
+        transform: rotate(-1deg) scale(1.05);
+    }
+
+    90% {
+        transform: rotate(1deg) scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 .works img {
     width: 100%; 
