@@ -320,6 +320,12 @@ text-decoration:underline;
     grid-template-columns: repeat(3, 1fr);
 }
 
+.stone-img {
+    width: 100%; 
+    height: auto; 
+    transition: width 0.3s ease;
+}
+
 
 
 
@@ -371,6 +377,7 @@ text-decoration:underline;
 }
 
 
+
 @media (max-width: 768px) {
     .works a {
         flex: 1 1 calc(50% - 30px); 
@@ -383,11 +390,19 @@ text-decoration:underline;
         display: none;
     }
     
-
     .right {
         padding: 15px;
     }
+    .stone {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .stone-img {
+        width: 70%; 
+    }
 }
+
+
+
 
 @media (max-width: 480px) {
     .works a {
@@ -414,5 +429,11 @@ text-decoration:underline;
 
     .works p {
         font-size: 18px;
+    }
+    .stone {
+        grid-template-columns: 1fr; 
+    }
+    .stone-img {
+        width: 60%; 
     }
 }
