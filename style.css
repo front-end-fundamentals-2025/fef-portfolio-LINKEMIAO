@@ -254,23 +254,25 @@ text-decoration:underline;
     text-align: center;
     transition: transform 0.3 ease-in-out;
 }
+/* reference: Bilibili https://www.bilibili.com/video/BV1vi4y147hf/?share_source=copy_web&vd_source=1a8cc37f6bd5dc76524f239958efaccc*/
 .heart {
     width: 40px;
     height: 40px;
-    background-color: rgb(222, 51, 116);
+    background-color: rgb(169, 169, 169); /* 默认灰色 */
     margin: 40px auto;
     position: relative;
     transform: rotate(-45deg);
     animation-name: shake;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
 }
-/* reference: Bilibili https://www.bilibili.com/video/BV1vi4y147hf/?share_source=copy_web&vd_source=1a8cc37f6bd5dc76524f239958efaccc*/
+
 .heart::before {
     content: '';
     width: 40px;
     height: 40px;
-    background-color:  rgb(222, 51, 116);
+    background-color: rgb(169, 169, 169); /* 默认灰色 */
     border-radius: 50%;
     position: absolute;
     top: -20px;
@@ -281,16 +283,57 @@ text-decoration:underline;
     content: '';
     width: 40px;
     height: 40px;
-    background-color: rgb(222, 51, 116);
+    background-color: rgb(169, 169, 169); 
     border-radius: 50%;
     position: absolute;
     top: 0;
     left: 20px;
 }
+
 .heart:hover {
-    background-color: rgb(222, 51, 116); 
     animation: shake 1.5s ease-in-out infinite; 
 }
+/* eference from Chatgpt:https://chatgpt.com/share/67b88007-1b58-8000-ad44-784adcfdf7b0*/
+.heart {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(169, 169, 169); 
+    margin: 40px auto;
+    position: relative;
+    transform: rotate(-45deg);
+    animation-name: shake;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    transition: background-color 0.3s ease; 
+}
+
+.heart::before, 
+.heart::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: rgb(169, 169, 169); 
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -20px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 20px;
+}
+
+
+.heart.active,
+.heart.active::before,
+.heart.active::after {
+    background-color: rgb(222, 51, 116); 
+}
+
 @keyframes shake {
     25% {
         transform: scale(1.2);
@@ -428,6 +471,7 @@ text-decoration:underline;
 .submenu {
     flex-direction: column;
     height: 200px;
+    background-color:rgb(32, 31, 31); 
 }
 @media (max-width: 768px) {
     .works a {
@@ -489,3 +533,6 @@ text-decoration:underline;
     }
 }
 
+.heartbutton {
+    align-items: center;
+}
