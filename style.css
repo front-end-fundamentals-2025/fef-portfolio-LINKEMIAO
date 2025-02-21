@@ -5,6 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.body {
+    background-color: white;
+    color: black;
+}
+
+
+.button:hover {
+    background-color: darkgray;
+}
+
 header {
     height: 80px;
     width: 100vw;
@@ -415,8 +425,10 @@ text-decoration:underline;
     line-height: 1.6em;
 }
 
-
-
+.submenu {
+    flex-direction: column;
+    height: 200px;
+}
 @media (max-width: 768px) {
     .works a {
         flex: 1 1 calc(50% - 30px); 
@@ -476,3 +488,4 @@ text-decoration:underline;
         width: 60%; 
     }
 }
+

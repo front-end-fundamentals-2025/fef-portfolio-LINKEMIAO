@@ -4,17 +4,30 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HTML PORTFOLIO</title>
+   <script src="js/background.js" defer></script>
    <link rel="stylesheet" href="style.css">
 </head>
  
 <body>
+
    <header>
    <h1>Linke Wu</h1>
+
    <ul>
       <li><a href="home.html">Home</a></li>
       <li><a href="index.html">About me</a></li>
-      <li><a href="portfolio.html">Protfolio</a></li>
+      <li><a href="portfolio.html">Protfolio</a>
+         <ul class="submenu">
+            <li><div><a href="#">ocean</a></div></li>
+            <li><div><a href="#">forest</a></div></li>
+            <li><div><a href="#">desert</a></div></li>
+            <li><div><a href="#">african savannah</a></div></li>
+            <li><div><a href="#">snowfield</a></div></li>
+         </ul>
+      </li>
       <li><a href="mail.html">Contact</a></li>
+      
+     
    </ul>
    </header>
    <main>
@@ -57,7 +70,33 @@
    </section>
    </main>
  
-
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const portfolioMenu = document.querySelector("li > a[href='portfolio.html']");
+    const submenu = document.querySelector(".submenu");
+ 
+    // Hide the submenu initially
+    submenu.style.display = "none";
+ 
+    // Add event listeners to show/hide submenu on hover
+    portfolioMenu.addEventListener("mouseover", function() {
+       submenu.style.display = "block";
+    });
+ 
+    portfolioMenu.addEventListener("mouseout", function() {
+       submenu.style.display = "none";
+    });
+ 
+    // Add event listeners for submenu items (optional)
+    const submenuItems = submenu.querySelectorAll("a");
+    submenuItems.forEach(item => {
+       item.addEventListener("click", function(event) {
+          event.preventDefault();  // Prevent default link behavior for now
+          alert("You clicked on " + item.textContent);
+       });
+    });
+ });
+ </script>
    
 </body>
 </html>
