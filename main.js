@@ -22,29 +22,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const portfolioMenu = document.querySelector("li > a[href='portfolio.html']");
-    const submenu = document.querySelector(".submenu");
- 
-    // Hide the submenu initially
-    submenu.style.display = "none";
- 
-    // Add event listeners to show/hide submenu on hover
-    portfolioMenu.addEventListener("mouseover", function() {
-       submenu.style.display = "block";
-    });
- 
-    portfolioMenu.addEventListener("mouseout", function() {
-       submenu.style.display = "none";
-    });
- 
-    // Add event listeners for submenu items (optional)
-    const submenuItems = submenu.querySelectorAll("a");
-    submenuItems.forEach(item => {
-       item.addEventListener("click", function(event) {
-          event.preventDefault();  // Prevent default link behavior for now
-          alert("You clicked on " + item.textContent);
-       });
-    });
- });
