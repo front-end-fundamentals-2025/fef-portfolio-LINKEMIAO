@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     heartbutton.addEventListener("click", function() {
         const currentColor = getComputedStyle(heart).backgroundColor;
+        //reference from Chatgpt:https://chatgpt.com/share/67b88007-1b58-8000-ad44-784adcfdf7b0
+        heart.classList.toggle("active"); 
+    });
 
         if (currentColor === "rgb(169, 169, 169)") {
             heart.style.backgroundColor = "rgb(222, 51, 116)"; 
@@ -12,13 +15,4 @@ document.addEventListener("DOMContentLoaded", function() {
             heart.style.backgroundColor = "rgb(169, 169, 169)"; 
         }
     });
-});
-//reference from Chatgpt:https://chatgpt.com/share/67b88007-1b58-8000-ad44-784adcfdf7b0
-document.addEventListener("DOMContentLoaded", function() {
-    const heart = document.querySelector(".heart");
-
-    heart.addEventListener("click", function() {
-        heart.classList.toggle("active"); 
-    });
-});
 
