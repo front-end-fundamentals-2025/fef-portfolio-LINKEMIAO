@@ -14,5 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             heart.style.backgroundColor = "rgb(169, 169, 169)"; 
         }
+    
     });
 
